@@ -6,7 +6,5 @@ class Config_Handler:
     def load_file(cls, path):
         with open(path, 'r') as file:
             doc = yaml.load(file, Loader=yaml.FullLoader)
-        cls.hostname = doc['hostname']
         cls.url = doc['url']
-        cls.key = doc['key']
         cls.interval = int(doc['interval'])

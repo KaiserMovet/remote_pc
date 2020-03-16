@@ -6,8 +6,7 @@ from bin.config_handler import Config_Handler
 class ReqManager:
     def __init__(self):
         self.url = \
-            F"{Config_Handler.url}/{Config_Handler.key}/"\
-            F"{Config_Handler.hostname}"
+            F"{Config_Handler.url}"
         self.interval = Config_Handler.interval
         pass
 
