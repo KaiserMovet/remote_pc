@@ -43,8 +43,8 @@ class _ShellInterface:
 
     @classmethod
     def turn_off(cls, cmd=""):
-        # cls._execute(
-        #    "shutdown /s /c 'Remote_pc: Shutting down computer'")
+        cls._execute(
+           "shutdown /s /c 'Remote_pc: Shutting down computer'")
         logging.info(F"Executing <turn_off> function for {cmd}")
 
     @classmethod
