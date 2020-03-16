@@ -10,7 +10,7 @@ If it receives a command, it will execute it.
 - remote_pc.ps1 - script, wchich activate virtual env and run python script
 
 Any custom commands can be added to `bin.command_executor.CommandExecutor`,
-to dictionary self.actions (Dict[command, function]). 
+to dictionary `self.actions` (Dict[command, function]). 
 
 ## The supported commands are:
 - computer shutdown ("turn_off")
