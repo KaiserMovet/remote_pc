@@ -12,6 +12,10 @@ If it receives a command, it will execute it.
 Any custom commands can be added to `bin.command_executor.CommandExecutor`,
 to dictionary `self.actions -> (Dict[command, function])`. 
 
+## Instalation
+1. Clone this repository
+2. Run install.ps1 script in powershell as admin
+
 ## The supported commands are:
 - computer shutdown ("turn_off")
 - blocking          ("lock")
