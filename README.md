@@ -1,4 +1,4 @@
-# remote_pc
+# Remote PC
 The software is used to download commands via https from the server and then execute them.
 The main purpose is to enable predefined commands via IFTTT and WebHook.
 
