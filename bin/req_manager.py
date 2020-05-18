@@ -11,9 +11,13 @@ class ReqManager:
         pass
 
     def _check(self):
-        a = requests.get(
-            self.url
-        ).content.decode('utf-8')
+        a = ""
+        try:
+            a = requests.get(
+                self.url
+            ).content.decode('utf-8')
+        except requests.exceptions.ConnectionError:
+            logging.warning(F"Cannot get <{self.url}>")
         return a
 
     def wait_for_command(self) -> str:
